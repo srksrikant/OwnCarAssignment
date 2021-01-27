@@ -26,8 +26,19 @@ const fetcher = async (url) => {
    
    <div>
     <div>
-    <h3>{data.carName}</h3>
-    <h3>{Car.id}</h3>
+    <div className={styles.main-container}>
+          <div className={styles.subcontainer}>
+          <div className={styles.left-continer}>
+          <Image src={car.carImage} alt={car.carName}width={500}  height={500} />
+        </div>
+        <div className={styles.right-container}>
+        <h3>{car.carName}</h3>
+        <p>{car.carCost}</p>
+        <p>{car.fuelType}</p>
+        <h4>{car.showroomDetails}</h4>
+        </div>
+          </div>
+        </div>
     </div>
    </div>
   
